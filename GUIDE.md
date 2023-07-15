@@ -79,7 +79,7 @@ export default defineConfig({
 	outDir: "dist", //输出文件目录
 	lib: { //库编译模式配置
       entry: path.resolve(__dirname, 'packages/index.js'), // 打包入口
-      name: 'vue3-verney-ui', // 库名称
+      name: 'vue3-verney-ui', // 库名称,设置前需在npm官网查询是否重名
       fileName: (format) => `verney-ui.${format}.js`, // 生成js文件名称
     },
     rollupOptions: {
@@ -124,7 +124,7 @@ dist/verney-ui.umd.js  3.07 kB │ gzip: 1.28 kB
     "files": [
         "dist"
     ],
-    "main": "./dist/verney-ui.umd.js",
+    "main": "./dist/verney-ui.umd.js", // 入口文件，需指向最终编译后的包文件。
     "module": "./dist/verney-ui.es.js",
     "description": "一个简单的 Vue3 UI 库~", // 描述
     "keywords": [ // 关键词
@@ -143,9 +143,9 @@ dist/verney-ui.umd.js  3.07 kB │ gzip: 1.28 kB
 
 ### 发布
 
-- `npm login`,输入账户密码登录~
+- `npm login`,输入账户密码登录，也需要输入邮箱，输入验证码~
 
-- `npm publish`，发布
+- `npm publish`，发布，成功在[npm官网](https://registry.npmjs.org/)输入关键词就能看到刚发布的包~
 
 
 ### 使用
@@ -197,3 +197,4 @@ createApp(App)
 
 
 - [使用vite构建Vue3组件库，发布npm包](https://blog.csdn.net/y227766/article/details/126426546)
+- [Vue3+TS+Vite开发组件库并发布到npm](https://blog.csdn.net/Dandrose/article/details/129142403)

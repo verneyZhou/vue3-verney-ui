@@ -1,18 +1,19 @@
-# Vue3 UI库：VerneyUI
+# Vue3 UI 库：VerneyUI
 
-一个简单的Vue3 UI组件库~
+一个简单的 Vue3 UI 组件库~
 
 ## 组件目录
 
-- 瀑布流
+-   瀑布流
 
-- toast
+-   toast
 
-- dialog
+-   dialog
 
-- 懒加载
+-   懒加载
 
-- 虚拟滚动列表
+-   虚拟滚动列表
 
+-   上传组件
 
-
+-   水印组件
